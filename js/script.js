@@ -168,4 +168,19 @@ var WEDDING_DATE = new Date('2026-10-14T23:24:00+05:30');
       audio.pause();
     }
   });
+
+  // Pause music when the tab is hidden/backgrounded; resume only if it was
+  // actually playing (not if the visitor had paused it themselves) when
+  // the tab becomes visible again.
+  var wasPlayingBeforeHide = false;
+  document.addEventListener('visibilitychange', function () {
+    if (document.hidden) {
+      wasPlayingBeforeHide = !audio.paused;
+      if (wasPlayingBeforeHide) {
+        audio.pause();
+      }
+    } else if (wasPlayingBeforeHide) {
+      audio.play().catch(function () {});
+    }
+  });
 })();
