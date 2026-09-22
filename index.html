@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shruthi &amp; Saikumar — Wedding Invitation</title>
+<meta name="description" content="You are cordially invited to celebrate our wedding.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="no-scroll">
+
+<div class="bg-photo" aria-hidden="true"></div>
+
+<div id="envelope" class="envelope">
+  <div class="envelope__card">
+    <div class="envelope__flap" aria-hidden="true"></div>
+    <button id="envelope-open" class="envelope__seal" type="button" aria-label="Open your invitation">
+      <span aria-hidden="true">&#128140;</span>
+    </button>
+    <div class="envelope__body">
+      <p class="envelope__eyebrow">You've Been Summoned</p>
+      <p class="envelope__names">Shruthi &amp; Saikumar</p>
+      <p class="envelope__hint">are tying the knot (finally) and want YOU there</p>
+      <p class="envelope__note">tap the seal to open</p>
+    </div>
+  </div>
+</div>
+
+<div id="invitation" class="invitation">
+
+<!-- PLACEHOLDER: replace assets/music.mp3 with your own track -->
+<audio id="bg-music" src="assets/neeli_meghamulalo.mp3" loop preload="auto" autoplay></audio>
+<button id="music-toggle" class="music-toggle" type="button" aria-pressed="false" aria-label="Play background music">
+  <svg class="music-toggle__icon music-toggle__icon--play" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M9 18V5l12-2v13" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+    <circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+    <circle cx="18" cy="16" r="3" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+  </svg>
+  <svg class="music-toggle__icon music-toggle__icon--pause" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" hidden>
+    <rect x="6" y="5" width="4" height="14" rx="1" fill="currentColor"></rect>
+    <rect x="14" y="5" width="4" height="14" rx="1" fill="currentColor"></rect>
+  </svg>
+</button>
+
+<!-- Decorative falling petals, populated by script.js -->
+<div class="petals" aria-hidden="true"></div>
+
+<header class="hero" id="home">
+  <div class="ornament ornament--light" aria-hidden="true">
+    <svg class="ornament-svg" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="85" y2="10" stroke="currentColor" stroke-width="1"></line>
+      <rect x="95" y="5" width="10" height="10" transform="rotate(45 100 10)" fill="currentColor"></rect>
+      <line x1="115" y1="10" x2="200" y2="10" stroke="currentColor" stroke-width="1"></line>
+    </svg>
+  </div>
+
+  <p class="hero__eyebrow reveal">Clear your calendar</p>
+
+  <h1 class="hero__names reveal">
+    <span class="hero__name">Shruthi</span>
+    <span class="hero__ampersand">&amp;</span>
+    <span class="hero__name">Saikumar</span>
+  </h1>
+
+  <p class="hero__tagline reveal">are getting married and would love nothing more than your chaotic, wonderful energy on our big day</p>
+
+  <p class="hero__date reveal">Wednesday, October 14, 2026</p>
+
+  <a href="#countdown" class="hero__scroll" aria-label="Scroll to countdown">&#8595;</a>
+</header>
+
+<section class="countdown reveal" id="countdown">
+  <h2 class="section-title">The Countdown Is On &#9203;</h2>
+  <div class="countdown__grid">
+    <div class="countdown__unit">
+      <span class="countdown__value" id="cd-days">00</span>
+      <span class="countdown__label">Days</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__value" id="cd-hours">00</span>
+      <span class="countdown__label">Hours</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__value" id="cd-minutes">00</span>
+      <span class="countdown__label">Minutes</span>
+    </div>
+    <div class="countdown__unit">
+      <span class="countdown__value" id="cd-seconds">00</span>
+      <span class="countdown__label">Seconds</span>
+    </div>
+  </div>
+  <p class="countdown__note" id="cd-note" hidden>It's happening RIGHT NOW — get here!</p>
+</section>
+
+<section class="story reveal" id="story">
+  <div class="ornament" aria-hidden="true">
+    <svg class="ornament-svg" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="85" y2="10" stroke="currentColor" stroke-width="1"></line>
+      <rect x="95" y="5" width="10" height="10" transform="rotate(45 100 10)" fill="currentColor"></rect>
+      <line x1="115" y1="10" x2="200" y2="10" stroke="currentColor" stroke-width="1"></line>
+    </svg>
+  </div>
+  <h2 class="section-title">Our Little Story</h2>
+  <p class="story__text">Our little office story has come a long way. &#128141;&#10084;&#65039;</p>
+  <p class="story__text">From &ldquo;See you at work tomorrow&rdquo; to &ldquo;See you at home forever&rdquo; we're getting married! &#128516;&#128141;</p>
+  <p class="story__text">Of all the things we accomplished together at work, falling in love was definitely our favourite. &#10084;&#65039;</p>
+</section>
+
+<section class="details reveal" id="details">
+  <h2 class="section-title">The Festivities Lineup</h2>
+  <div class="details__grid">
+    <article class="details__card">
+      <h3>Pasupu &amp; Pellikuthuru</h3>
+      <p class="details__datetime">Sunday, October 11, 2026<br>10:00 AM</p>
+      <p class="details__venue"><strong>ABC Water View</strong></p>
+      <p class="details__address"><strong>Gornatla, Guntur</strong></p>
+      <a class="details__link" href="https://maps.app.goo.gl/JHzoNPBw2yoiikNNA" target="_blank" rel="noopener noreferrer">View on Map</a>
+    </article>
+    <article class="details__card">
+      <h3>Pellikoduku &amp; Haldi</h3>
+      <p class="details__datetime">Sunday, October 11, 2026<br>10:00 AM</p>
+      <p class="details__venue"><strong>Anjana Green Park</strong></p>
+      <p class="details__address"><strong>Guntupalli, Vijayawada</strong></p>
+      <a class="details__link" href="https://maps.app.goo.gl/9weGmwaL3PntudQd6" target="_blank" rel="noopener noreferrer">View on Map</a>
+    </article>
+    <article class="details__card">
+      <h3>Mehndi</h3>
+      <p class="details__datetime">Tuesday, October 13, 2026<br>5:00 PM</p>
+      <p class="details__venue"><strong>ABC Water View</strong></p>
+      <p class="details__address"><strong>Gornatla, Guntur</strong></p>
+      <a class="details__link" href="https://maps.app.goo.gl/JHzoNPBw2yoiikNNA" target="_blank" rel="noopener noreferrer">View on Map</a>
+    </article>
+    <article class="details__card">
+      <h3>The Wedding</h3>
+      <p class="details__datetime">Wednesday, October 14, 2026<br>Dinner 8:00 PM &middot; Sumuhurtham 11:24 PM</p>
+      <p class="details__venue"><strong>Vijayam Convention</strong></p>
+      <p class="details__address"><strong>Guntur,Amaravathi Road</strong></p>
+      <a class="details__link" href="https://maps.app.goo.gl/547FTQ7zQhRWLVJ2A" target="_blank" rel="noopener noreferrer">View on Map</a>
+    </article>
+  </div>
+  <p class="details__dresscode">Dress Code: Fancy enough for photos, comfy enough for the festivities</p>
+</section>
+
+<footer class="footer reveal">
+  <div class="ornament" aria-hidden="true">
+    <svg class="ornament-svg" viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg">
+      <line x1="0" y1="10" x2="85" y2="10" stroke="currentColor" stroke-width="1"></line>
+      <rect x="95" y="5" width="10" height="10" transform="rotate(45 100 10)" fill="currentColor"></rect>
+      <line x1="115" y1="10" x2="200" y2="10" stroke="currentColor" stroke-width="1"></line>
+    </svg>
+  </div>
+  <p class="footer__thanks">We can't wait to laugh, eat, and shed a few happy tears together.</p>
+  <p class="footer__names">Shruthi &amp; Saikumar</p>
+  <p class="footer__hashtag">
+    <span>#ShruthiWedsSaikumar</span>
+    <span>#SaiFallsForShruthi</span>
+    <span>#FromColleaguesToCouple</span>
+  </p>
+</footer>
+
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
+
