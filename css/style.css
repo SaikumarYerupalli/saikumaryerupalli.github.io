@@ -33,6 +33,7 @@ body {
   color: var(--color-charcoal);
   font-family: var(--font-body);
   font-size: clamp(1rem, 0.95rem + 0.3vw, 1.15rem);
+  font-weight: bold;
   line-height: 1.7;
   overflow-x: hidden;
   word-wrap: break-word;
@@ -51,7 +52,7 @@ body.no-scroll {
   inset: 0;
   z-index: -1;
   background-image:
-    linear-gradient(rgba(250, 246, 239, 0.55), rgba(250, 246, 239, 0.55)),
+    linear-gradient(rgba(250, 246, 239, 0.4), rgba(250, 246, 239, 0.4)),
     url('../assets/bg_image.jpeg');
   background-size: cover;
   background-position: center;
@@ -62,7 +63,7 @@ body.no-scroll {
 @media (max-width: 768px) {
   .bg-photo {
     background-image:
-      linear-gradient(rgba(250, 246, 239, 0.55), rgba(250, 246, 239, 0.55)),
+      linear-gradient(rgba(250, 246, 239, 0.4), rgba(250, 246, 239, 0.4)),
       url('../assets/bg_image_mobile.jpeg');
   }
 }
@@ -368,49 +369,6 @@ section, header, footer {
 }
 
 .details__dresscode {
-  font-style: italic;
-  color: var(--color-charcoal-soft);
-  text-shadow: 0 1px 4px rgba(250, 246, 239, 0.9);
-}
-
-/* Live stream --------------------------------------------------------------- */
-
-.livestream {
-  background: rgba(243, 236, 223, 0.78);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
-
-.livestream__text {
-  max-width: 45ch;
-  margin: 0 auto 1.5rem;
-  color: var(--color-charcoal-soft);
-  text-shadow: 0 1px 4px rgba(250, 246, 239, 0.9);
-}
-
-.livestream__link {
-  display: inline-block;
-  font-family: var(--font-display);
-  font-size: clamp(1rem, 0.95rem + 0.2vw, 1.1rem);
-  letter-spacing: 0.04em;
-  text-decoration: none;
-  color: var(--color-ivory);
-  background: linear-gradient(160deg, var(--color-gold-soft), var(--color-gold));
-  padding: 0.85rem 2rem;
-  border-radius: 999px;
-  box-shadow: 0 6px 16px rgba(58, 53, 47, 0.2);
-  transition: transform 200ms ease, box-shadow 200ms ease;
-}
-
-.livestream__link:hover,
-.livestream__link:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 22px rgba(58, 53, 47, 0.26);
-}
-
-.livestream__note {
-  margin: 1rem 0 0;
-  font-size: 0.85rem;
   font-style: italic;
   color: var(--color-charcoal-soft);
   text-shadow: 0 1px 4px rgba(250, 246, 239, 0.9);
