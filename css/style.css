@@ -216,9 +216,11 @@ section, header, footer {
   left: 50%;
   transform: translateX(-50%);
   text-decoration: none;
-  font-size: 1.5rem;
-  color: var(--color-gold-soft);
-  animation: bounce 2.4s ease-in-out infinite;
+  font-size: 4rem;
+  font-weight: bold;
+  color: #f0c987;
+  text-shadow: 0 0 10px rgba(240, 201, 135, 0.8), 0 0 4px rgba(255, 255, 255, 0.6);
+  animation: bounce 1.5s ease-in-out infinite;
 }
 
 @keyframes bounce {
